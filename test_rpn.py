@@ -10,9 +10,9 @@ class TestBasics(unittest.TestCase):
     def test_exponent(self):
         result = rpn.calculate('5 2 ^')
         self.assertEqual(25, result)
-   # def test_multiply(self):
-    #    result = rpn.calculate('5 2 *')
-     #   self.assertEqual(10, result)
-    #def test_divide(self):
-     #   result = rpn.calculate('10 2 /')
-      #  self.assertEqual(5, result)
+    def test_multiply(self):
+        result = rpn.calculate('5 2 *')
+        self.assertEqual(10, result)
+    def test_divide(self):
+        result = rpn.calculate('10 2 /')
+        self.assertEqual(5, result)
