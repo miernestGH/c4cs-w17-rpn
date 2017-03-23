@@ -23,7 +23,7 @@ OPERATORS = {
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
-     '^': operator.pow,
+    '^': operator.pow,
 }
 
 
@@ -45,13 +45,13 @@ def calculate(arg):
 def main():
     while True:
         result = calculate(input('rpn calc> '))
+        print("Result: ", result)
 
-     #   if result < 0:
-      #      print("Result:", colored(result, 'red'))
+       # if result < 0:
+        #    print("Result:", colored(result, 'red'))
 
-       # else:
-        #print("Result:", colored(result, 'green'))
-            print("Result: ", result)
-            
+        #else:
+         #   print("Result:", colored(result, 'green'))
+
 if __name__ == '__main__':
-        main()
+    main()
