@@ -1,19 +1,18 @@
 #!/usr/bin/env python3
 
-from termcolor import colored
+# from termcolor import colored
 
 def add(arg1, arg2):
     return arg1 + arg2
 
 def subtract(arg1, arg2):
     return arg1 - arg2
-	return arg1 - arg2
 
 def divide(arg1, arg2):
-	return arg1 / arg2
+    return arg1 / arg2
 
 def multiply(arg1, arg2):
-	return arg1 * arg2
+    return arg1 * arg2
 
 import operator
 
@@ -24,7 +23,7 @@ OPERATORS = {
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
-        '^': operator.pow,
+     '^': operator.pow,
 }
 
 
@@ -47,11 +46,12 @@ def main():
     while True:
         result = calculate(input('rpn calc> '))
 
-        if result < 0:
-            print("Result:", colored(result, 'red'))
+     #   if result < 0:
+      #      print("Result:", colored(result, 'red'))
 
-        else:
-            print("Result:", colored(result, 'green'))
-
+       # else:
+        #print("Result:", colored(result, 'green'))
+            print("Result: ", result)
+            
 if __name__ == '__main__':
         main()
